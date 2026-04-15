@@ -1,0 +1,23 @@
+# 训练数据（太大，不上传）
+complete_verifier/branch_data/
+
+# 预训练网络权重（很大，不上传）
+complete_verifier/models/
+
+# 实验结果文件
+complete_verifier/out_*.pkl
+complete_verifier/out_*.txt
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# 环境
+*.egg-info/
+.env
+
+# IDE
+.vscode/
+.idea/

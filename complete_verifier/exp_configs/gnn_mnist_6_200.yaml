@@ -1,0 +1,32 @@
+general:
+  complete_verifier: bab
+  device: cuda
+
+model:
+  name: mnist_6_200
+  path: models/eran/mnist_6_200_nat.pth
+
+data:
+  dataset: MNIST_ERAN_UN
+  std: [1.0]
+  mean: [0.0]
+
+specification:
+  epsilon: 0.015
+
+attack:
+  pgd_order: skip
+
+solver:
+  batch_size: 256
+  beta-crown:
+    iteration: 20
+
+bab:
+  timeout: 300
+  branching:
+    method: gnn
+    reduceop: max
+    candidates: 3
+    gnn_model_path: gnn_branch_model.pt
+    gnn_fallback: babsr

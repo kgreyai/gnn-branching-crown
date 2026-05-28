@@ -1,0 +1,8 @@
+conda activate abrown_py311
+cd com_v
+
+# gnn
+python abcrown.py --config exp_configs/gnn_mnist.yaml --start 0 --end 5 --device cpu --results_file out_gnn_6_100_1.pkl
+
+#kfsb
+python abcrown.py --config exp_configs/collect_mnist.yaml --start 0 --end 5 --device cpu --results_file out_kfsb_6_100_1.pkl

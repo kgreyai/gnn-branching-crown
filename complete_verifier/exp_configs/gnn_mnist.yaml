@@ -23,7 +23,7 @@ solver:
     iteration: 20
 
 bab:
-  timeout: 300
+  timeout: 60
   branching:
     method: gnn
     reduceop: max
